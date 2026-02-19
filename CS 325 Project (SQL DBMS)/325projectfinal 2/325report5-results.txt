@@ -1,9 +1,0 @@
-Report 5:
-
-Wed Dec 11                                                        page    1
-                         Sales Performance Report
-
-TOTAL_REVENUE TOTAL_PAYMENTS OUTSTANDING_BALANCE TOTAL_TRANSACTIONS        
-------------- -------------- ------------------- ------------------        
-    $28646.38      $27596.38            $1050.00             $16.00        
-
