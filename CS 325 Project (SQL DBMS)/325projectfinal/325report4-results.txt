@@ -1,0 +1,32 @@
+Report 4:
+
+Wed Dec 11                                                        page    1
+                       Customer Contact Information
+
+Customer Name     Phone Number    Email Address                            
+----------------- --------------- -----------------------------------      
+David Brown       805-555-8901    tech.hernandez@tech.com                  
+Sam Chen          406-555-5678    sam.chen@cloudnet.com                    
+James Garcia      417-555-6789    mohammed.electronics@dataguard.com       
+Kami Garcia       637-555-0123    kami.garcia@dataguard.com                
+Steve Gupta       415-555-2345    steve.gupta@tech.com                     
+Emily Johnson     620-555-4567    humboldtrecords@greentech.com            
+Olivia Jones      858-555-2345    techy.zhangs@cloudnet.com                
+Olivia Jones      858-555-2345    tech.zhang@cloudnet.com                  
+Jada Marasigan    412-555-7890    jada.marasigan@globalit.com              
+Sophia Martinez   315-555-0131    techelena.ivanova@yahoo.com              
+Sophia Martinez   415-555-0142    techelena.ivanova@yahoo.com              
+Sophia Martinez   215-555-0120    techelena.ivanova@yahoo.com              
+Sophia Martinez   415-555-0142    techelena.ivanova@aol.com                
+Sophia Martinez   315-555-0131    techelena.ivanova@aol.com                
+Sophia Martinez   215-555-0120    techelena.ivanova@aol.com                
+Sophia Martinez   415-555-0142    elenatech.ivanova@greentech.com          
+Sophia Martinez   215-555-0120    elenatech.ivanova@greentech.com          
+Sophia Martinez   315-555-0131    elenatech.ivanova@greentech.com          
+John Rodriguez    208-555-1234    john.rodriguez@tech.com                  
+Michael Smith     517-555-8901    humbdlibrary@globalit.com                
+Emile Thompson    403-555-3456    ema.thompson@gmail.com                   
+Emile Thompson    403-555-3456    emile.thompson@greentech.com             
+Natalie Watts     412-555-9012    natalie.watts@dataguard.com              
+Sarah Williams    712-555-4567    computers@innovatech.com                 
+Jones Wong        471-555-6789    jones.wong@cloudnet.com                  

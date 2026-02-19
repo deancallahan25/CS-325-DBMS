@@ -1,0 +1,124 @@
+Testing for trigger display all of payment
+
+PAYMENT_ID PAYMENT_METHOD  AMOUNT_PAID CURRENCY   BUSINESS_ID TRANSACTION_ID                                                                          
+---------- --------------- ----------- ---------- ----------- --------------                                                                          
+    410001 Check                149.99 USD             100001         400001                                                                          
+    410002 Check                199.99 USD             100001         400002                                                                          
+    410003 Debit                 99.99 USD             100001         400003                                                                          
+    410004 Check                    50 USD             100001         400004                                                                          
+    410005 Debit                   300 EUR             100001         400005                                                                          
+    410006 Cash                    450 USD             100001         400006                                                                          
+    410007 Check                   200 USD             100001         400007                                                                          
+    410008 Check                 49.99 EUR             100001         400008                                                                          
+    410009 Cash                  10000 USD             100001         400009                                                                          
+    410010 Check                  1000 USD             100001         400010                                                                          
+    410011 Credit                 4000 CA$             100001         400011                                                                          
+
+PAYMENT_ID PAYMENT_METHOD  AMOUNT_PAID CURRENCY   BUSINESS_ID TRANSACTION_ID                                                                          
+---------- --------------- ----------- ---------- ----------- --------------                                                                          
+    410012 Cash                   1275 USD             100001         400012                                                                          
+    410013 Check                999.99 USD             100001         400013                                                                          
+    410014 Credit                 4500 USD             100001         400014                                                                          
+    410015 Check               3571.43 USD             100001         400015                                                                          
+    410016 Check                   750 USD             100001         400016                                                                          
+
+16 rows selected.
+
+
+Trigger created.
+
+Update Payment and Display Result
+UPDATE PAYMENT
+       *
+ERROR at line 1:
+ORA-20001: Invalid payment method 
+ORA-06512: at "DPC43.TRG_PAYMENT_METHOD_VERIFICATION", line 3 
+ORA-04088: error during execution of trigger 'DPC43.TRG_PAYMENT_METHOD_VERIFICATION' 
+
+
+
+PAYMENT_ID PAYMENT_METHOD  AMOUNT_PAID CURRENCY   BUSINESS_ID TRANSACTION_ID                                                                          
+---------- --------------- ----------- ---------- ----------- --------------                                                                          
+    410001 Check                149.99 USD             100001         400001                                                                          
+    410002 Check                199.99 USD             100001         400002                                                                          
+    410003 Debit                 99.99 USD             100001         400003                                                                          
+    410004 Check                    50 USD             100001         400004                                                                          
+    410005 Debit                   300 EUR             100001         400005                                                                          
+    410006 Cash                    450 USD             100001         400006                                                                          
+    410007 Check                   200 USD             100001         400007                                                                          
+    410008 Check                 49.99 EUR             100001         400008                                                                          
+    410009 Cash                  10000 USD             100001         400009                                                                          
+    410010 Check                  1000 USD             100001         400010                                                                          
+    410011 Credit                 4000 CA$             100001         400011                                                                          
+
+PAYMENT_ID PAYMENT_METHOD  AMOUNT_PAID CURRENCY   BUSINESS_ID TRANSACTION_ID                                                                          
+---------- --------------- ----------- ---------- ----------- --------------                                                                          
+    410012 Cash                   1275 USD             100001         400012                                                                          
+    410013 Check                999.99 USD             100001         400013                                                                          
+    410014 Credit                 4500 USD             100001         400014                                                                          
+    410015 Check               3571.43 USD             100001         400015                                                                          
+    410016 Check                   750 USD             100001         400016                                                                          
+
+16 rows selected.
+
+Testing for trigger display all of service_type
+
+SERVICE_TYPE_ID SERVICE_NAME                                       SERVICE_COST                                                                       
+--------------- -------------------------------------------------- ------------                                                                       
+         610001 Apple Virus Removal                                         200                                                                       
+         610002 Windows Virus Removal                                       200                                                                       
+         610003 Browser Virus Removal                                       200                                                                       
+         610004 Laptop Hardware Upgrade                                     150                                                                       
+         610005 PC Hardware Upgrade                                         300                                                                       
+         610006 Software Troubleshooting                                    300                                                                       
+         610007 Browser Troubleshooting                                     300                                                                       
+         610008 Network Setup                                               400                                                                       
+         610009 Network Upgrade                                             300                                                                       
+         610010 Full System Virus Removal                                   300                                                                       
+         610011 Hardware Troubleshooting                                    300                                                                       
+
+SERVICE_TYPE_ID SERVICE_NAME                                       SERVICE_COST                                                                       
+--------------- -------------------------------------------------- ------------                                                                       
+         610012 Application Virus Removal                                   300                                                                       
+         610013 Specialized Virus Removal                                   300                                                                       
+         610014 Software Troubleshooting for Mac                            300                                                                       
+         610015 Internet Network Setup                                      350                                                                       
+
+15 rows selected.
+
+
+Trigger created.
+
+Update service_type and Display Result
+UPDATE SERVICE_TYPE
+       *
+ERROR at line 1:
+ORA-20002: Invalid service type 
+ORA-06512: at "DPC43.TRG_SERVICE_TYPE_VERIFICATION", line 4 
+ORA-04088: error during execution of trigger 'DPC43.TRG_SERVICE_TYPE_VERIFICATION' 
+
+
+
+SERVICE_TYPE_ID SERVICE_NAME                                       SERVICE_COST                                                                       
+--------------- -------------------------------------------------- ------------                                                                       
+         610001 Apple Virus Removal                                         200                                                                       
+         610002 Windows Virus Removal                                       200                                                                       
+         610003 Browser Virus Removal                                       200                                                                       
+         610004 Laptop Hardware Upgrade                                     150                                                                       
+         610005 PC Hardware Upgrade                                         300                                                                       
+         610006 Software Troubleshooting                                    300                                                                       
+         610007 Browser Troubleshooting                                     300                                                                       
+         610008 Network Setup                                               400                                                                       
+         610009 Network Upgrade                                             300                                                                       
+         610010 Full System Virus Removal                                   300                                                                       
+         610011 Hardware Troubleshooting                                    300                                                                       
+
+SERVICE_TYPE_ID SERVICE_NAME                                       SERVICE_COST                                                                       
+--------------- -------------------------------------------------- ------------                                                                       
+         610012 Application Virus Removal                                   300                                                                       
+         610013 Specialized Virus Removal                                   300                                                                       
+         610014 Software Troubleshooting for Mac                            300                                                                       
+         610015 Internet Network Setup                                      350                                                                       
+
+15 rows selected.
+

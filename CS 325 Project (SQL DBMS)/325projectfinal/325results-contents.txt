@@ -1,0 +1,832 @@
+Selecting from Shift table
+
+  SHIFT_ID TOTAL_HOURS_WORKED SCHEDULE_ID    EMPL_ID                                                                                                  
+---------- ------------------ ----------- ----------                                                                                                  
+    210001                  8      120001     200001                                                                                                  
+    210002                  8      120001     200002                                                                                                  
+    210003                  6      120001     200003                                                                                                  
+    210004                  8      120001     200004                                                                                                  
+    210005                  6      120001     200005                                                                                                  
+    210006                  8      120001     200006                                                                                                  
+    210007                  4      120001     200007                                                                                                  
+    210008                  8      120001     200008                                                                                                  
+    210009                  4      120001     200009                                                                                                  
+    210010                  8      120001     200010                                                                                                  
+    210011                  4      120001     200011                                                                                                  
+
+  SHIFT_ID TOTAL_HOURS_WORKED SCHEDULE_ID    EMPL_ID                                                                                                  
+---------- ------------------ ----------- ----------                                                                                                  
+    210012                  8      120001     200012                                                                                                  
+    210013                  4      120001     200013                                                                                                  
+    210014                  8      120001     200014                                                                                                  
+    210015                  4      120001     200015                                                                                                  
+    210016                  8      120001     200015                                                                                                  
+    210017                  4      120001     200005                                                                                                  
+    210018                  9      120001     200005                                                                                                  
+    210019                  4      120001     200004                                                                                                  
+    210020                  8      120001     200001                                                                                                  
+    210021                  4      120001     200006                                                                                                  
+    210022                  8      120001     200007                                                                                                  
+
+  SHIFT_ID TOTAL_HOURS_WORKED SCHEDULE_ID    EMPL_ID                                                                                                  
+---------- ------------------ ----------- ----------                                                                                                  
+    210023                  4      120001     200010                                                                                                  
+    210025                  6      120001     200011                                                                                                  
+    210026                  6      120001     200012                                                                                                  
+
+25 rows selected.
+
+Selecting from Technician table
+
+   EMPL_ID TECHNICIAN_ID TICKETS_COMPLETED                                                                                                            
+---------- ------------- -----------------                                                                                                            
+    200001        600004                18                                                                                                            
+    200002        600009                20                                                                                                            
+    200003        600002                16                                                                                                            
+    200004        600010                24                                                                                                            
+    200005        600001                25                                                                                                            
+   2000016        600001                25                                                                                                            
+   2000017        600001                25                                                                                                            
+   2000018        600001                25                                                                                                            
+   2000019        600001                25                                                                                                            
+    200006        600005                15                                                                                                            
+    200007        600002                40                                                                                                            
+
+   EMPL_ID TECHNICIAN_ID TICKETS_COMPLETED                                                                                                            
+---------- ------------- -----------------                                                                                                            
+    200008        600003                35                                                                                                            
+    200009        600004                50                                                                                                            
+    200010        600006                15                                                                                                            
+    200011        600007                15                                                                                                            
+    200012        600008                15                                                                                                            
+    200013        600009                20                                                                                                            
+    200014        600010                15                                                                                                            
+    200015        600011                10                                                                                                            
+
+19 rows selected.
+
+Selecting from Technician_Tech_Certifications
+
+   EMPL_ID TECH_CERTIFICATIONS                                                                                                                        
+---------- --------------------------------------------------                                                                                         
+    200005 CompTIA A+                                                                                                                                 
+    200005 Network+                                                                                                                                   
+    200006 CCNA                                                                                                                                       
+    200006 Security+                                                                                                                                  
+    200007 AWS Certified                                                                                                                              
+    200007 Azure Administrator                                                                                                                        
+    200008 CISSP                                                                                                                                      
+    200008 Ethical Hacking                                                                                                                            
+    200009 Cloud Essential                                                                                                                            
+    200009 Linux+                                                                                                                                     
+    200013 AWS Certified Solutions Architect                                                                                                          
+
+   EMPL_ID TECH_CERTIFICATIONS                                                                                                                        
+---------- --------------------------------------------------                                                                                         
+    200013 ITIL Foundation                                                                                                                            
+    200015 CCNA                                                                                                                                       
+    200015 CompTIA Security+                                                                                                                          
+    200015 Google Cloud Associate                                                                                                                     
+
+15 rows selected.
+
+Selecting from Technicians_Rents_From_Equipment_Rental
+
+   EMPL_ID  RENTAL_ID                                                                                                                                 
+---------- ----------                                                                                                                                 
+    200005     700001                                                                                                                                 
+    200006     700002                                                                                                                                 
+    200007     700003                                                                                                                                 
+    200008     700004                                                                                                                                 
+    200009     700005                                                                                                                                 
+    200009     700006                                                                                                                                 
+    200009     700007                                                                                                                                 
+    200010     700008                                                                                                                                 
+    200011     700009                                                                                                                                 
+    200011     700010                                                                                                                                 
+    200012     700011                                                                                                                                 
+
+   EMPL_ID  RENTAL_ID                                                                                                                                 
+---------- ----------                                                                                                                                 
+    200013     700012                                                                                                                                 
+    200013     700013                                                                                                                                 
+    200014     700012                                                                                                                                 
+    200014     700013                                                                                                                                 
+    200014     700014                                                                                                                                 
+    200015     700011                                                                                                                                 
+    200015     700014                                                                                                                                 
+    200015     700015                                                                                                                                 
+
+19 rows selected.
+
+Selecting from Manager table
+
+   EMPL_ID MANAGER_ID MANAGER_BONUS INVENTORY_ID SCHEDULE_ID                                                                                          
+---------- ---------- ------------- ------------ -----------                                                                                          
+    200001     500003          7500       110001      120001                                                                                          
+    200002     500001         15000       110001      120001                                                                                          
+    200003     500002         10000       110001      120001                                                                                          
+    200004     500003          7500       110001      120001                                                                                          
+   2000001     500004          8000       110001      120001                                                                                          
+   2000002     500005         12000       110001      120001                                                                                          
+   2000003     500006          9000       110001      120001                                                                                          
+   2000004     500007          8500       110001      120001                                                                                          
+   2000005     500008         10000       110001      120001                                                                                          
+    200006     500009          7500       110001      120001                                                                                          
+    200007     500010          9500       110001      120001                                                                                          
+
+   EMPL_ID MANAGER_ID MANAGER_BONUS INVENTORY_ID SCHEDULE_ID                                                                                          
+---------- ---------- ------------- ------------ -----------                                                                                          
+    200008     500011         11000       110001      120001                                                                                          
+    200009     500012          7000       110001      120001                                                                                          
+   2000010     500013         10500       110001      120001                                                                                          
+   2000011     500013         10500       110001      120001                                                                                          
+
+15 rows selected.
+
+Selecting from Empl_Email table
+
+   EMPL_ID EMPL_EMAIL                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    200001 michael.rodriguez@tech.com                                                                                                                 
+    200002 nathan.watson@dataguard.com                                                                                                                
+    200003 j.marasigan@google.com                                                                                                                     
+    200003 jaztin.marasigan@globalit.com                                                                                                              
+    200004 dean.callahan@globalit.com                                                                                                                 
+    200005 sarah.chen@cloudnet.com                                                                                                                    
+    200006 em.thompson@gmail.com                                                                                                                      
+    200006 em.thompson@humboldt.edu                                                                                                                   
+    200006 emily.thompson@greentech.com                                                                                                               
+    200007 priya.gupta@tech.com                                                                                                                       
+    200008 alex.wong@cloudnet.com                                                                                                                     
+
+   EMPL_ID EMPL_EMAIL                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    200009 maria.garcia@dataguard.com                                                                                                                 
+    200010 ryan.kim@greentech.com                                                                                                                     
+    200011 aisha.malik@innovatech.com                                                                                                                 
+    200012 carlos.hernandez@tech.com                                                                                                                  
+    200013 lily.zhang@cloudnet.com                                                                                                                    
+    200014 mohammed.alsayed@dataguard.com                                                                                                             
+    200015 elena.ivanova@greentech.com                                                                                                                
+
+18 rows selected.
+
+Selecting from Empl_Phone table
+
+   EMPL_ID EMPL_PHONE                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    200001 408-555-1234                                                                                                                               
+    200002 206-555-5678                                                                                                                               
+    200003 323-123-4344                                                                                                                               
+    200003 512-555-9012                                                                                                                               
+    200004 303-555-3456                                                                                                                               
+    200004 314-554-3454                                                                                                                               
+    200005 212-555-7890                                                                                                                               
+    200006 415-555-2345                                                                                                                               
+    200007 971-555-6789                                                                                                                               
+    200008 737-555-0123                                                                                                                               
+    200009 720-555-4567                                                                                                                               
+
+   EMPL_ID EMPL_PHONE                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    200010 917-555-8901                                                                                                                               
+    200011 312-555-4567                                                                                                                               
+    200012 305-555-8901                                                                                                                               
+    200013 858-555-2345                                                                                                                               
+    200014 617-555-6589                                                                                                                               
+    200014 617-555-6789                                                                                                                               
+    200015 215-555-0123                                                                                                                               
+
+18 rows selected.
+
+Selecting from Work_Schedule table
+
+SCHEDULE_ID HOURS_OPERATION DATE_SCHE BUSINESS_ID                                                                                                     
+----------- --------------- --------- -----------                                                                                                     
+     120001 9am-5pm         10-SEP-20      100001                                                                                                     
+     120002 10am-6pm        11-SEP-20      100001                                                                                                     
+     120003 8am-4pm         12-SEP-20      100001                                                                                                     
+     120004 7am-3pm         13-SEP-20      100001                                                                                                     
+     120005 11am-7pm        14-SEP-20      100001                                                                                                     
+     120006 9am-5pm         15-SEP-20      100001                                                                                                     
+     120007 6am-2pm         16-SEP-20      100001                                                                                                     
+     120008 10am-6pm        17-SEP-20      100001                                                                                                     
+     120009 8am-4pm         18-SEP-20      100001                                                                                                     
+     120010 7am-3pm         19-SEP-20      100001                                                                                                     
+     120011 12pm-8pm        20-SEP-20      100001                                                                                                     
+
+SCHEDULE_ID HOURS_OPERATION DATE_SCHE BUSINESS_ID                                                                                                     
+----------- --------------- --------- -----------                                                                                                     
+     120012 11am-7pm        21-SEP-20      100001                                                                                                     
+     120013 9am-5pm         22-SEP-20      100001                                                                                                     
+     120014 8am-4pm         23-SEP-20      100001                                                                                                     
+     120015 7am-3pm         24-SEP-20      100001                                                                                                     
+
+15 rows selected.
+
+Selecting from Equipment_Service_Function table
+
+EQUIPMENT_ID SERVICE_FUNCTION                                                                                                                         
+------------ -----------------------------------                                                                                                      
+      800001 Remove Virus                                                                                                                             
+      800002 Remove Virus                                                                                                                             
+      800003 Remove Virus                                                                                                                             
+      800004 Macbook Hardware Repair Kit                                                                                                              
+      800005 Macbook Extra Hardware                                                                                                                   
+      800006 Intel Laptops Hardware Repair Kit                                                                                                        
+      800007 Surface Pro Hardware Repair Kit                                                                                                          
+      800008 Intel Laptops Extra Hardware                                                                                                             
+      800009 Surface Pro Hardware Repair Kit                                                                                                          
+      800010 Remove Virus                                                                                                                             
+      800011 Remove Virus                                                                                                                             
+
+EQUIPMENT_ID SERVICE_FUNCTION                                                                                                                         
+------------ -----------------------------------                                                                                                      
+      800012 Remove Virus                                                                                                                             
+      800013 Remove Virus                                                                                                                             
+      800014 Remove Virus                                                                                                                             
+      800015 Remove Virus                                                                                                                             
+
+15 rows selected.
+
+Selecting from Equipment_Contract_Function table
+
+EQUIPMENT_ID CONTRACT_FUNCTION                                                                                                                        
+------------ --------------------------------------------------                                                                                       
+      800001 Systems Checkup Tool                                                                                                                     
+      800002 Systems Checkup Tool                                                                                                                     
+      800003 Systems Checkup Tool                                                                                                                     
+      800004 Emergency Support Tool                                                                                                                   
+      800005 Systems Checkup Tool                                                                                                                     
+      800006 Systems Checkup Tool                                                                                                                     
+      800007 Emergency Support Tool                                                                                                                   
+      800008 Maintenance Tool                                                                                                                         
+      800009 Systems Checkup Tool                                                                                                                     
+      800010 Systems Checkup Tool                                                                                                                     
+      800011 Maintenance Tool                                                                                                                         
+
+EQUIPMENT_ID CONTRACT_FUNCTION                                                                                                                        
+------------ --------------------------------------------------                                                                                       
+      800012 Systems Checkup Tool                                                                                                                     
+      800013 Maintenance Tool                                                                                                                         
+      800014 Systems Checkup Tool                                                                                                                     
+      800015 Systems Checkup Tool                                                                                                                     
+
+15 rows selected.
+
+Selecting from Equipment table
+
+EQUIPMENT_ID INVENTORY_ID  RENTAL_ID                                                                                                                  
+------------ ------------ ----------                                                                                                                  
+      800001       110001     700001                                                                                                                  
+      800002       110001     700002                                                                                                                  
+      800003       110001     700003                                                                                                                  
+      800004       110001     700004                                                                                                                  
+      800005       110001     700005                                                                                                                  
+      800006       110001     700006                                                                                                                  
+      800007       110001     700007                                                                                                                  
+      800008       110001     700008                                                                                                                  
+      800009       110001     700009                                                                                                                  
+      800010       110001     700010                                                                                                                  
+      800011       110001     700011                                                                                                                  
+
+EQUIPMENT_ID INVENTORY_ID  RENTAL_ID                                                                                                                  
+------------ ------------ ----------                                                                                                                  
+      800012       110001     700012                                                                                                                  
+      800013       110001     700013                                                                                                                  
+      800014       110001     700014                                                                                                                  
+      800015       110001     700015                                                                                                                  
+
+15 rows selected.
+
+Selecting from Equipment_Rental table
+
+ RENTAL_ID DATE_RENT DATE_RETU                                                                                                                        
+---------- --------- ---------                                                                                                                        
+    700001 01-JAN-20 02-JAN-20                                                                                                                        
+    700002 01-JAN-20 02-FEB-20                                                                                                                        
+    700003 01-FEB-20 12-FEB-20                                                                                                                        
+    700004 08-JUN-20 10-JUN-20                                                                                                                        
+    700005 01-NOV-20 22-DEC-20                                                                                                                        
+    700006 01-JAN-19 02-JAN-20                                                                                                                        
+    700007 10-JAN-20 03-MAR-20                                                                                                                        
+    700008 14-APR-20 02-MAY-20                                                                                                                        
+    700009 28-JAN-22 26-NOV-23                                                                                                                        
+    700010 14-NOV-20 06-DEC-20                                                                                                                        
+    700011 13-JUN-20 15-JUL-20                                                                                                                        
+
+ RENTAL_ID DATE_RENT DATE_RETU                                                                                                                        
+---------- --------- ---------                                                                                                                        
+    700012 12-JAN-20 02-JAN-21                                                                                                                        
+    700013 01-DEC-20 02-DEC-20                                                                                                                        
+    700014 04-MAY-20 20-DEC-20                                                                                                                        
+    700015 07-FEB-20 02-NOV-20                                                                                                                        
+
+15 rows selected.
+
+Selecting from Payment table
+
+PAYMENT_ID PAYMENT_METHOD  AMOUNT_PAID CURRENCY   BUSINESS_ID TRANSACTION_ID                                                                          
+---------- --------------- ----------- ---------- ----------- --------------                                                                          
+    410001 Check                149.99 USD             100001         400001                                                                          
+    410002 Check                199.99 USD             100001         400002                                                                          
+    410003 Debit                 99.99 USD             100001         400003                                                                          
+    410004 Check                    50 USD             100001         400004                                                                          
+    410005 Debit                   300 EUR             100001         400005                                                                          
+    410006 Cash                    450 USD             100001         400006                                                                          
+    410007 Check                   200 USD             100001         400007                                                                          
+    410008 Check                 49.99 EUR             100001         400008                                                                          
+    410009 Cash                  10000 USD             100001         400009                                                                          
+    410010 Check                  1000 USD             100001         400010                                                                          
+    410011 Credit                 4000 CA$             100001         400011                                                                          
+
+PAYMENT_ID PAYMENT_METHOD  AMOUNT_PAID CURRENCY   BUSINESS_ID TRANSACTION_ID                                                                          
+---------- --------------- ----------- ---------- ----------- --------------                                                                          
+    410012 Cash                   1275 USD             100001         400012                                                                          
+    410013 Check                999.99 USD             100001         400013                                                                          
+    410014 Credit                 4500 USD             100001         400014                                                                          
+    410015 Check               3571.43 USD             100001         400015                                                                          
+    410016 Check                   750 USD             100001         400016                                                                          
+
+16 rows selected.
+
+Selecting from Transaction table
+
+TRANSACTION_ID AMOUNT_DUE DATE_DUE  CUSTOMER_ID                                                                                                       
+-------------- ---------- --------- -----------                                                                                                       
+        400001     149.99 01-JAN-21      300001                                                                                                       
+        400002     199.99 01-OCT-21      300002                                                                                                       
+        400003      99.99 02-DEC-22      300003                                                                                                       
+        400004         50 03-OCT-20      300004                                                                                                       
+        400005        300 05-SEP-20      300005                                                                                                       
+        400006        500 08-FEB-23      300006                                                                                                       
+        400007        200 13-JUN-23      300007                                                                                                       
+        400008      49.99 21-JUL-23      300008                                                                                                       
+        400009      10000 12-SEP-20      300009                                                                                                       
+        400010       1000 25-APR-20      300010                                                                                                       
+        400011       5000 08-MAR-24      300011                                                                                                       
+
+TRANSACTION_ID AMOUNT_DUE DATE_DUE  CUSTOMER_ID                                                                                                       
+-------------- ---------- --------- -----------                                                                                                       
+        400012       1275 03-FEB-24      300012                                                                                                       
+        400013     999.99 19-NOV-24      300013                                                                                                       
+        400014       4500 29-DEC-23      300014                                                                                                       
+        400015    3571.43 05-SEP-24      300015                                                                                                       
+        400016        750 05-AUG-24      300016                                                                                                       
+
+16 rows selected.
+
+Selecting from Service table
+
+SERVICE_ID SERVICE_S SERVICE_E  TICKET_ID CUSTOMER_ID                                                                                                 
+---------- --------- --------- ---------- -----------                                                                                                 
+    311001 02-JAN-21 04-JAN-21     900001      300001                                                                                                 
+    311002 02-OCT-21 08-OCT-21     900002      300002                                                                                                 
+    311003 03-DEC-22 05-DEC-22     900003      300003                                                                                                 
+    311004 05-SEP-20 08-SEP-20     900004      300004                                                                                                 
+    311005 08-FEB-20 10-FEB-20     900005      300005                                                                                                 
+    311006 13-JUN-23 20-JUN-23     900006      300006                                                                                                 
+    311007 21-JUL-23 21-JUL-23     900007      300007                                                                                                 
+    311008 12-SEP-23 12-SEP-23     900008      300008                                                                                                 
+    311009 25-APR-20 25-APR-20     900009      300001                                                                                                 
+    311010 08-MAR-20 10-MAR-20     900010      300002                                                                                                 
+    311011 03-FEB-21 05-FEB-21     900011      300003                                                                                                 
+
+SERVICE_ID SERVICE_S SERVICE_E  TICKET_ID CUSTOMER_ID                                                                                                 
+---------- --------- --------- ---------- -----------                                                                                                 
+    311012 19-NOV-24 21-NOV-24     900012      300004                                                                                                 
+    311013 29-DEC-24 31-DEC-24     900013      300005                                                                                                 
+    311014 05-SEP-23 07-SEP-23     900014      300006                                                                                                 
+    311015 05-AUG-24 07-AUG-24     900015      300007                                                                                                 
+
+15 rows selected.
+
+Selecting from Maintenance_Contract table
+
+CONTRACT_ID CONTRACT_ CONTRACT_  TICKET_ID CUSTOMER_ID                                                                                                
+----------- --------- --------- ---------- -----------                                                                                                
+     500001 07-JAN-21 09-JAN-21     900001      300009                                                                                                
+     500002 04-OCT-21 06-OCT-21     900002      300010                                                                                                
+     500003 01-DEC-22 03-DEC-22     900003      300011                                                                                                
+     500004 28-DEC-22 30-DEC-22     900004      300012                                                                                                
+     500005 03-JAN-23 05-JAN-23     900005      300013                                                                                                
+     500006 05-MAR-23 07-MAR-23     900006      300014                                                                                                
+     500007 08-JUN-22 10-JUN-23     900007      300015                                                                                                
+     500008 26-JUL-23 28-JUL-23     900008      300009                                                                                                
+     500009 03-AUG-23 05-AUG-23     900009      300009                                                                                                
+     500010 14-SEP-23 16-SEP-23     900010      300010                                                                                                
+     500011 02-OCT-23 04-OCT-23     900011      300011                                                                                                
+
+CONTRACT_ID CONTRACT_ CONTRACT_  TICKET_ID CUSTOMER_ID                                                                                                
+----------- --------- --------- ---------- -----------                                                                                                
+     500012 20-NOV-22 22-NOV-23     900012      300012                                                                                                
+     500013 23-DEC-23 25-DEC-23     900013      300013                                                                                                
+     500014 12-JAN-24 15-JAN-24     900014      300014                                                                                                
+     500015 03-FEB-24 05-FEB-24     900015      300015                                                                                                
+
+15 rows selected.
+
+Selecting from Service_Type table
+
+SERVICE_TYPE_ID SERVICE_NAME                                       SERVICE_COST                                                                       
+--------------- -------------------------------------------------- ------------                                                                       
+         610001 Apple Virus Removal                                         200                                                                       
+         610002 Windows Virus Removal                                       200                                                                       
+         610003 Browser Virus Removal                                       200                                                                       
+         610004 Laptop Hardware Upgrade                                     150                                                                       
+         610005 PC Hardware Upgrade                                         300                                                                       
+         610006 Software Troubleshooting                                    300                                                                       
+         610007 Browser Troubleshooting                                     300                                                                       
+         610008 Network Setup                                               400                                                                       
+         610009 Network Upgrade                                             300                                                                       
+         610010 Full System Virus Removal                                   300                                                                       
+         610011 Hardware Troubleshooting                                    300                                                                       
+
+SERVICE_TYPE_ID SERVICE_NAME                                       SERVICE_COST                                                                       
+--------------- -------------------------------------------------- ------------                                                                       
+         610012 Application Virus Removal                                   300                                                                       
+         610013 Specialized Virus Removal                                   300                                                                       
+         610014 Software Troubleshooting for Mac                            300                                                                       
+         610015 Internet Network Setup                                      350                                                                       
+
+15 rows selected.
+
+Selecting from Service_Is_Service_Type table
+
+SERVICE_ID SERVICE_TYPE_ID                                                                                                                            
+---------- ---------------                                                                                                                            
+    311001          610001                                                                                                                            
+    311002          610002                                                                                                                            
+    311002          610003                                                                                                                            
+    311002          610004                                                                                                                            
+    311003          610005                                                                                                                            
+    311003          610006                                                                                                                            
+    311004          610007                                                                                                                            
+    311005          610008                                                                                                                            
+    311006          610009                                                                                                                            
+    311007          610010                                                                                                                            
+    311008          610011                                                                                                                            
+
+SERVICE_ID SERVICE_TYPE_ID                                                                                                                            
+---------- ---------------                                                                                                                            
+    311009          610012                                                                                                                            
+    311010          610013                                                                                                                            
+    311011          610014                                                                                                                            
+    311012          610015                                                                                                                            
+
+15 rows selected.
+
+Selecting from Contract_Type table
+
+CONTRACT_TYPE_ID CONTRACT_NAME                                      CONTRACT_COST                                                                     
+---------------- -------------------------------------------------- -------------                                                                     
+          510001 Monthly Check Up                                             400                                                                     
+          510002 Semi-annual Check Up                                         450                                                                     
+          510003 Yearly Check Up                                              600                                                                     
+          510004 Windows System Update                                        300                                                                     
+          510005 Mac System Update                                            300                                                                     
+          510006 Linus System Update                                          300                                                                     
+          510007 Emergency Support Type 1                                     800                                                                     
+          510008 Emergency Support Type 2                                     650                                                                     
+          510009 Emergency Support Type 3                                     500                                                                     
+          510010 Network Maintenance                                          400                                                                     
+          510011 Database Maintenance                                         450                                                                     
+
+CONTRACT_TYPE_ID CONTRACT_NAME                                      CONTRACT_COST                                                                     
+---------------- -------------------------------------------------- -------------                                                                     
+          510012 Security Maintenance                                         500                                                                     
+          510013 Overall Maintenance                                         1000                                                                     
+          510014 Customer Maintenance                                         400                                                                     
+          510015 Employee Maintenance                                         400                                                                     
+
+15 rows selected.
+
+Selecting from Contract_Is_Contract_Type
+
+CONTRACT_ID CONTRACT_TYPE_ID                                                                                                                          
+----------- ----------------                                                                                                                          
+     500001           510001                                                                                                                          
+     500001           510002                                                                                                                          
+     500002           510010                                                                                                                          
+     500002           510015                                                                                                                          
+     500003           510015                                                                                                                          
+     500004           510015                                                                                                                          
+     500005           510014                                                                                                                          
+     500006           510012                                                                                                                          
+     500007           510005                                                                                                                          
+     500008           510010                                                                                                                          
+     500009           510006                                                                                                                          
+
+CONTRACT_ID CONTRACT_TYPE_ID                                                                                                                          
+----------- ----------------                                                                                                                          
+     500010           510005                                                                                                                          
+     500011           510003                                                                                                                          
+     500012           510002                                                                                                                          
+     500013           510001                                                                                                                          
+
+15 rows selected.
+
+Selecting from Technicians_Resolve_Ticket
+
+   EMPL_ID  TICKET_ID                                                                                                                                 
+---------- ----------                                                                                                                                 
+    200005     900001                                                                                                                                 
+    200005     900002                                                                                                                                 
+    200005     900003                                                                                                                                 
+    200006     900004                                                                                                                                 
+    200006     900005                                                                                                                                 
+    200007     900006                                                                                                                                 
+    200008     900007                                                                                                                                 
+    200009     900008                                                                                                                                 
+    200010     900009                                                                                                                                 
+    200011     900010                                                                                                                                 
+    200012     900011                                                                                                                                 
+
+   EMPL_ID  TICKET_ID                                                                                                                                 
+---------- ----------                                                                                                                                 
+    200012     900012                                                                                                                                 
+    200013     900013                                                                                                                                 
+    200014     900014                                                                                                                                 
+    200015     900015                                                                                                                                 
+
+15 rows selected.
+
+Selecting from Customer_Submit_Ticket
+
+CUSTOMER_ID  TICKET_ID                                                                                                                                
+----------- ----------                                                                                                                                
+     300001     900001                                                                                                                                
+     300001     900002                                                                                                                                
+     300002     900003                                                                                                                                
+     300003     900004                                                                                                                                
+     300004     900005                                                                                                                                
+     300005     900006                                                                                                                                
+     300006     900007                                                                                                                                
+     300007     900008                                                                                                                                
+     300008     900009                                                                                                                                
+     300009     900010                                                                                                                                
+     300010     900011                                                                                                                                
+
+CUSTOMER_ID  TICKET_ID                                                                                                                                
+----------- ----------                                                                                                                                
+     300011     900012                                                                                                                                
+     300012     900013                                                                                                                                
+     300013     900014                                                                                                                                
+     300014     900015                                                                                                                                
+
+15 rows selected.
+
+Selecting from Ticket table
+
+ TICKET_ID DATE_OPEN DATE_CLOS STATUS                                                CUST_ID                                                          
+---------- --------- --------- -------------------------------------------------- ----------                                                          
+    900001 01-JAN-23 02-JAN-23 In progress                                            300001                                                          
+    900002 10-FEB-23 04-JAN-24 In progress                                            300002                                                          
+    900003 11-FEB-23 05-JAN-24 In progress                                            300003                                                          
+    900004 05-MAR-23 10-APR-23 In progress                                            300004                                                          
+    900005 21-APR-23 12-JAN-24 In progress                                            300005                                                          
+    900006 14-JUL-23 02-AUG-23 In progress                                            300006                                                          
+    900007 16-JAN-23 10-FEB-23 In progress                                            300007                                                          
+    900008 02-JAN-23 03-JAN-23 Processing                                             300008                                                          
+    900009 08-NOV-23 02-DEC-23 Processing                                             300009                                                          
+    900010 01-DEC-23 08-DEC-23 Processing                                             300010                                                          
+    900011 27-OCT-23 28-NOV-23 Completed                                              300011                                                          
+
+ TICKET_ID DATE_OPEN DATE_CLOS STATUS                                                CUST_ID                                                          
+---------- --------- --------- -------------------------------------------------- ----------                                                          
+    900012 28-OCT-23 29-NOV-23 Completed                                              300012                                                          
+    900013 24-MAR-23 25-APR-23 Completed                                              300013                                                          
+    900014 22-APR-23 27-JUN-23 Completed                                              300014                                                          
+    900015 21-JAN-23 25-JUN-23 Completed                                              300015                                                          
+
+15 rows selected.
+
+Selecting from Small_Business table
+
+CUSTOMER_ID SMALL_BUSINESS_ID     TAX_ID DBA                                                                                                          
+----------- ----------------- ---------- --------------------------------------------------                                                           
+     300009            320009  969420696 Humboldt Records                                                                                             
+     300010            320010  969421696 Humboldt Library                                                                                             
+     300011            320011  969422696 Computers Innovatech                                                                                         
+     300012            320012  969423696 Hernandez Tech Repair                                                                                        
+     300013            320013  969424696 Techy Zhangs                                                                                                 
+     300014            320014  969425696 Mohammad Electronics                                                                                         
+     300015            320015  969426696 Elenas Tech World                                                                                            
+     300016            320016  969427696 BestBuds GeekTeam                                                                                            
+     300001            320016  969427696 TechGeeks                                                                                                    
+     300002            320016  969427696 TechGenies                                                                                                   
+     300003            320016  969427696 Humboldt Tech Store                                                                                          
+
+CUSTOMER_ID SMALL_BUSINESS_ID     TAX_ID DBA                                                                                                          
+----------- ----------------- ---------- --------------------------------------------------                                                           
+     300004            320016  969427696 Apple                                                                                                        
+     300005            320016  969427696 Verizon                                                                                                      
+     300006            320016  969427696 BestBuy                                                                                                      
+     300007            320016  969427696 Walmart                                                                                                      
+     300008            320016  969427696 Google                                                                                                       
+
+16 rows selected.
+
+Selecting from Individual_Client; table
+
+CUSTOMER_ID  CLIENT_ID CLIENT_FNAME                                       CLIENT_LNAME                                                                
+----------- ---------- -------------------------------------------------- --------------------------------------------------                          
+     300001     310001 John                                               Rodriguez                                                                   
+     300002     310002 Sam                                                Chen                                                                        
+     300003     310003 Natalie                                            Watts                                                                       
+     300004     310004 Emile                                              Thompson                                                                    
+     300005     310005 Jada                                               Marasigan                                                                   
+     300006     310006 Steve                                              Gupta                                                                       
+     300007     310007 Jones                                              Wong                                                                        
+     300008     310008 Kami                                               Garcia                                                                      
+     300009     310009 Emily                                              Johnson                                                                     
+     300010     310010 Michael                                            Smith                                                                       
+     300011     310011 Sarah                                              Williams                                                                    
+
+CUSTOMER_ID  CLIENT_ID CLIENT_FNAME                                       CLIENT_LNAME                                                                
+----------- ---------- -------------------------------------------------- --------------------------------------------------                          
+     300012     310012 David                                              Brown                                                                       
+     300013     310013 Olivia                                             Jones                                                                       
+     300014     310014 James                                              Garcia                                                                      
+     300015     310015 Sophia                                             Martinez                                                                    
+
+15 rows selected.
+
+Selecting from Cust_Email table
+
+   CUST_ID CUST_EMAIL                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    300001 john.rodriguez@tech.com                                                                                                                    
+    300002 sam.chen@cloudnet.com                                                                                                                      
+    300003 natalie.watts@dataguard.com                                                                                                                
+    300004 ema.thompson@gmail.com                                                                                                                     
+    300004 emile.thompson@greentech.com                                                                                                               
+    300005 jada.marasigan@globalit.com                                                                                                                
+    300006 steve.gupta@tech.com                                                                                                                       
+    300007 jones.wong@cloudnet.com                                                                                                                    
+    300008 kami.garcia@dataguard.com                                                                                                                  
+    300009 humboldtrecords@greentech.com                                                                                                              
+    300010 humbdlibrary@globalit.com                                                                                                                  
+
+   CUST_ID CUST_EMAIL                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    300011 computers@innovatech.com                                                                                                                   
+    300012 tech.hernandez@tech.com                                                                                                                    
+    300013 tech.zhang@cloudnet.com                                                                                                                    
+    300013 techy.zhangs@cloudnet.com                                                                                                                  
+    300014 mohammed.electronics@dataguard.com                                                                                                         
+    300015 elenatech.ivanova@greentech.com                                                                                                            
+    300015 techelena.ivanova@aol.com                                                                                                                  
+    300015 techelena.ivanova@yahoo.com                                                                                                                
+
+19 rows selected.
+
+Selecting from Cust_Phone table
+
+   CUST_ID CUST_PHONE                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    300001 208-555-1234                                                                                                                               
+    300002 406-555-5678                                                                                                                               
+    300003 412-555-9012                                                                                                                               
+    300004 403-555-3456                                                                                                                               
+    300005 412-555-7890                                                                                                                               
+    300006 415-555-2345                                                                                                                               
+    300007 471-555-6789                                                                                                                               
+    300008 637-555-0123                                                                                                                               
+    300009 620-555-4567                                                                                                                               
+    300010 517-555-8901                                                                                                                               
+    300011 712-555-4567                                                                                                                               
+
+   CUST_ID CUST_PHONE                                                                                                                                 
+---------- --------------------------------------------------                                                                                         
+    300012 805-555-8901                                                                                                                               
+    300013 858-555-2345                                                                                                                               
+    300014 417-555-6789                                                                                                                               
+    300015 215-555-0120                                                                                                                               
+    300015 315-555-0131                                                                                                                               
+    300015 415-555-0142                                                                                                                               
+    300016 215-555-0123                                                                                                                               
+    300016 215-555-0124                                                                                                                               
+
+19 rows selected.
+
+Selecting from Customer table
+
+CUSTOMER_ID CUST_ADDRESS                                       BUSINESS_ID CUST_TYPE                                                                  
+----------- -------------------------------------------------- ----------- --------------------------------------------------                         
+     300001 1000 Main St, Arcata, CA                                100001 Individual_Client                                                          
+     300002 1011 1st St, Arcata, CA                                 100001 Individual_Client                                                          
+     300003 2048 Industrial St, Arcata, CA                          100001 Individual_Client                                                          
+     300004 1024 Park Blvd, Arcata, CA                              100001 Individual_Client                                                          
+     300005 512 Grove Ct, Arcata, CA                                100001 Individual_Client                                                          
+     300006 256 A St, Arcata, CA                                    100001 Individual_Client                                                          
+     300007 128 Mission Dr, Arcata, CA                              100001 Individual_Client                                                          
+     300008 333 Main Way, Eureka, CA                                100001 Individual_Client                                                          
+     300009 444 Central Way, Eureka, CA                             100001 Small_Business                                                             
+     300010 555 Business Way, Eureka, CA                            100001 Small_Business                                                             
+     300011 666 Finance Way, Eureka, CA                             100001 Small_Business                                                             
+
+CUSTOMER_ID CUST_ADDRESS                                       BUSINESS_ID CUST_TYPE                                                                  
+----------- -------------------------------------------------- ----------- --------------------------------------------------                         
+     300012 777 Broad Way, Arcata, NY                               100001 Small_Business                                                             
+     300013 888 Westward Way, Arcata, NJ                            100001 Small_Business                                                             
+     300014 999 Mission Dr, Arcata, FL                              100001 Small_Business                                                             
+     300015 1111 F St, Arcata, CA                                   100001 Small_Business                                                             
+     300016 1000 A St, Arcata, CA                                   100001 Small_Business                                                             
+
+16 rows selected.
+
+Selecting from Inventory table
+
+INVENTORY_ID ITEM_COUNT INVENTORY_CONDITION                                BUSINESS_ID                                                                
+------------ ---------- -------------------------------------------------- -----------                                                                
+      110001         45 Fair                                                    100001                                                                
+      110002         50 Fair                                                    100007                                                                
+      110003         75 Good                                                    100008                                                                
+      110004         40 Excellent                                               100009                                                                
+      110005         60 Like New                                                100010                                                                
+      110006        200 Good                                                    100011                                                                
+      110007         35 New                                                     100012                                                                
+      110008         80 Fair                                                    100013                                                                
+      110009         55 Excellent                                               100014                                                                
+      110010         45 Good                                                    100015                                                                
+      110011        100 Like New                                                100016                                                                
+
+INVENTORY_ID ITEM_COUNT INVENTORY_CONDITION                                BUSINESS_ID                                                                
+------------ ---------- -------------------------------------------------- -----------                                                                
+      110012         30 New                                                     100017                                                                
+      110013         65 Fair                                                    100018                                                                
+      110014         90 Good                                                    100019                                                                
+      110015         50 Excellent                                               100020                                                                
+
+15 rows selected.
+
+Selecting from Employee table
+
+   EMPL_ID EMPL_SALARY EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             BUSINESS_ID EMPL_TYPE       HIREDATE        
+---------- ----------- -------------------- -------------------- ---------------------------------------- ----------- --------------- ---------       
+    200001       75000 Michael              Rodriguez            12 Oak Street, San Jose, CA                   100001 Manager         15-JAN-22       
+    200002       90000 Nathan               Watson               78 Maple Drive, Austin, TX                    100001 Manager         10-MAR-20       
+    200003       95000 Jaztin               Marasigan            67 Cedar Lane, New York, NY                   100001 Manager         05-NOV-19       
+    200004      100000 Dean                 Callahan             78 Magnolia Way, New York, NY                 100001 Manager         30-JUN-19       
+    200005       82000 Sarah                Chen                 45 Pine Avenue, Seattle, WA                   100001 Technician      01-JUL-21       
+    200006       65000 Emily                Thompson             34 Elm Road, Denver, CO                       100001 Technician      20-FEB-23       
+    200007       70000 Priya                Gupta                89 Birch Court, San Francisco, CA             100001 Technician      12-MAY-22       
+    200008       80000 Alex                 Wong                 23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+    200009       85000 Maria                Garcia               56 Sequoia Drive, Austin, TX                  100001 Technician      25-AUG-20       
+    200010       62000 Ryan                 Kim                  45 Spruce Boulevard, Boulder, CO              100001 Technician      10-JAN-23       
+    200011       78000 Aisha                Malik                234 Techpark Lane, Chicago, IL                100001 Technician      01-APR-22       
+
+   EMPL_ID EMPL_SALARY EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             BUSINESS_ID EMPL_TYPE       HIREDATE        
+---------- ----------- -------------------- -------------------- ---------------------------------------- ----------- --------------- ---------       
+    200012       85000 Carlos               Hernandez            567 Innovation Street, Miami, FL              100001 Technician      15-NOV-21       
+    200013       72000 Lily                 Zhang                890 Startup Boulevard, San Diego, CA          100001 Technician      20-JAN-23       
+    200014       92000 Mohammed             Al-Sayed             123 Tech Crescent, Boston, MA                 100001 Technician      07-JUL-20       
+    200015       68000 Elena                Ivanova              456 Innovation Avenue, Philadelphia, PA       100001 Technician      01-SEP-22       
+   2000001       80000 Alex                 Jobs                 23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000002       80000 Ken                  Cobble               23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000003       80000 Olivia               Mason                23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000004       80000 Steve                Smith                23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000005       80000 George               Doe                  23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000006       80000 Alice                Jenkins              23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+   2000007       60000 Alex                 Jackson              23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+
+   EMPL_ID EMPL_SALARY EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             BUSINESS_ID EMPL_TYPE       HIREDATE        
+---------- ----------- -------------------- -------------------- ---------------------------------------- ----------- --------------- ---------       
+   2000008       60000 Steve                West                 23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+   2000009       70000 Jamie                East                 23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+   2000010       60000 Jesse                North                23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000011       70000 Micah                South                23 Redwood Street, Portland, OR               100001 Manager         18-SEP-21       
+   2000016       60000 Sarah                Wang                 23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+   2000017       50000 Courtney             Lybard               23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+   2000018       20000 Jane                 Thawne               23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+   2000019       10000 James                Allen                23 Redwood Street, Portland, OR               100001 Technician      18-SEP-21       
+
+30 rows selected.
+
+Selecting from Business table
+
+BUSINESS_ID     TAX_ID DBA                                                ADDRESS                                            HOURS_OPERATION          
+----------- ---------- -------------------------------------------------- -------------------------------------------------- ---------------          
+     100001  987654321 Humboldt Haven IT                                  123 Innovation Way, Arcata, CA                     Mon-Fri 9am-5pm          
+     100007  543210987 CyberShield Security Solutions                     789 Firewall Street, Washington D.C.               Mon-Fri 8am-5pm          
+     100008  654321098 EcoTech Renewable Energy                           456 Solar Boulevard, San Francisco, CA             Mon-Sat 9am-6pm          
+     100009  765432109 MedTech Innovations                                123 Healthcare Drive, Boston, MA                   24/7 Support             
+     100010  876543210 FinanceGuard Consulting                            901 Wall Street, New York, NY                      Mon-Fri 7am-6pm          
+     100011  987654321 AgriSmart Agricultural Tech                        234 Farmstead Lane, Des Moines, IA                 Mon-Fri 8am-5pm          
+     100012   98765432 QuantumLeap Computing                              567 Circuit Road, Research Triangle, NC            Mon-Sat 9am-7pm          
+     100013  210987654 GlobalLogistics Solutions                          345 Shipping Avenue, Houston, TX                   24/7 Operations          
+     100014  321098765 EduTech Learning Systems                           678 Campus Court, Chicago, IL                      Mon-Fri 9am-5pm          
+     100015  432109876 AeroSpace Innovations                              890 Runway Street, Seattle, WA                     Mon-Fri 8am-4pm          
+     100016  543210987 SmartHome Technologies                             234 Innovation Plaza, Austin, TX                   Mon-Sat 9am-6pm          
+
+BUSINESS_ID     TAX_ID DBA                                                ADDRESS                                            HOURS_OPERATION          
+----------- ---------- -------------------------------------------------- -------------------------------------------------- ---------------          
+     100017  654321098 CleanWater Environmental                           567 Sustainability Road, Portland, OR              Mon-Fri 7am-4pm          
+     100018  765432109 CulinaryTech Solutions                             789 Kitchen Innovations Drive, San Jose, CA        Mon-Fri 8am-5pm          
+     100019  876543210 UrbanTransit Systems                               456 Metro Boulevard, San Francisco, CA             24/7 Support             
+     100020  987654321 RoboTech Automation                                123 Robotics Lane, Pittsburgh, PA                  Mon-Fri 9am-6pm          
+
+15 rows selected.
+

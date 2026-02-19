@@ -1,0 +1,10 @@
+Report 3:
+
+Wed Dec 11                page    1
+  Average Salary by Employee Type
+
+Employee Type     AVG_SALARY       
+--------------- ------------       
+Manager           $80,909.09       
+Technician        $65,736.84       
+

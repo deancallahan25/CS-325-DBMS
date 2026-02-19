@@ -1,0 +1,9 @@
+Report 2:
+
+Wed Dec 11                                         page    1
+                 Ticket Resolution Summary
+
+TOTAL_TICKETS OPEN_TICKETS RESOLVED_TICKETS PENDING_TICKETS 
+------------- ------------ ---------------- --------------- 
+           15            7                5               3 
+

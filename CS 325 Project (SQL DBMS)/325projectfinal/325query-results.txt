@@ -1,0 +1,519 @@
+Query 1:
+Purpose: Get the details of all employees along with the business they belong to
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_SALARY BUSINESS_NAME                                                                        
+---------- -------------------- -------------------- ----------- --------------------------------------------------                                   
+    200001 Michael              Rodriguez                  75000 Humboldt Haven IT                                                                    
+    200002 Nathan               Watson                     90000 Humboldt Haven IT                                                                    
+    200003 Jaztin               Marasigan                  95000 Humboldt Haven IT                                                                    
+    200004 Dean                 Callahan                  100000 Humboldt Haven IT                                                                    
+    200005 Sarah                Chen                       82000 Humboldt Haven IT                                                                    
+    200006 Emily                Thompson                   65000 Humboldt Haven IT                                                                    
+    200007 Priya                Gupta                      70000 Humboldt Haven IT                                                                    
+    200008 Alex                 Wong                       80000 Humboldt Haven IT                                                                    
+    200009 Maria                Garcia                     85000 Humboldt Haven IT                                                                    
+    200010 Ryan                 Kim                        62000 Humboldt Haven IT                                                                    
+    200011 Aisha                Malik                      78000 Humboldt Haven IT                                                                    
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_SALARY BUSINESS_NAME                                                                        
+---------- -------------------- -------------------- ----------- --------------------------------------------------                                   
+    200012 Carlos               Hernandez                  85000 Humboldt Haven IT                                                                    
+    200013 Lily                 Zhang                      72000 Humboldt Haven IT                                                                    
+    200014 Mohammed             Al-Sayed                   92000 Humboldt Haven IT                                                                    
+    200015 Elena                Ivanova                    68000 Humboldt Haven IT                                                                    
+   2000001 Alex                 Jobs                       80000 Humboldt Haven IT                                                                    
+   2000002 Ken                  Cobble                     80000 Humboldt Haven IT                                                                    
+   2000003 Olivia               Mason                      80000 Humboldt Haven IT                                                                    
+   2000004 Steve                Smith                      80000 Humboldt Haven IT                                                                    
+   2000005 George               Doe                        80000 Humboldt Haven IT                                                                    
+   2000006 Alice                Jenkins                    80000 Humboldt Haven IT                                                                    
+   2000007 Alex                 Jackson                    60000 Humboldt Haven IT                                                                    
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_SALARY BUSINESS_NAME                                                                        
+---------- -------------------- -------------------- ----------- --------------------------------------------------                                   
+   2000008 Steve                West                       60000 Humboldt Haven IT                                                                    
+   2000009 Jamie                East                       70000 Humboldt Haven IT                                                                    
+   2000010 Jesse                North                      60000 Humboldt Haven IT                                                                    
+   2000011 Micah                South                      70000 Humboldt Haven IT                                                                    
+   2000016 Sarah                Wang                       60000 Humboldt Haven IT                                                                    
+   2000017 Courtney             Lybard                     50000 Humboldt Haven IT                                                                    
+   2000018 Jane                 Thawne                     20000 Humboldt Haven IT                                                                    
+   2000019 James                Allen                      10000 Humboldt Haven IT                                                                    
+
+30 rows selected.
+
+Query 2:
+Purpose: Find the numbers of tickets each customer made
+
+CUSTOMER_ID TOTAL_TICKETS                                                                                                                             
+----------- -------------                                                                                                                             
+     300001             2                                                                                                                             
+     300002             1                                                                                                                             
+     300003             1                                                                                                                             
+     300004             1                                                                                                                             
+     300005             1                                                                                                                             
+     300006             1                                                                                                                             
+     300007             1                                                                                                                             
+     300008             1                                                                                                                             
+     300009             1                                                                                                                             
+     300010             1                                                                                                                             
+     300011             1                                                                                                                             
+
+CUSTOMER_ID TOTAL_TICKETS                                                                                                                             
+----------- -------------                                                                                                                             
+     300012             1                                                                                                                             
+     300013             1                                                                                                                             
+     300014             1                                                                                                                             
+
+14 rows selected.
+
+Query 3:
+Purpose: Identify the top 3 highest paid employees
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_SALARY                                                                                      
+---------- -------------------- -------------------- -----------                                                                                      
+    200004 Dean                 Callahan                  100000                                                                                      
+    200003 Jaztin               Marasigan                  95000                                                                                      
+    200014 Mohammed             Al-Sayed                   92000                                                                                      
+
+Query 4:
+Purpose: Get the average salary for both employee types
+
+EMPL_TYPE       AVG_SALARY                                                                                                                            
+--------------- ----------                                                                                                                            
+Technician      65736.8421                                                                                                                            
+Manager         80909.0909                                                                                                                            
+
+Query 5:
+Purpose: Find the technicians that have more than one tech certificate
+
+   EMPL_ID TECHNICIAN_ID TICKETS_COMPLETED                                                                                                            
+---------- ------------- -----------------                                                                                                            
+    200005        600001                25                                                                                                            
+    200006        600005                15                                                                                                            
+    200007        600002                40                                                                                                            
+    200008        600003                35                                                                                                            
+    200009        600004                50                                                                                                            
+    200013        600009                20                                                                                                            
+    200015        600011                10                                                                                                            
+
+7 rows selected.
+
+Query 6:
+Purpose: Find the technicians that have multiple tickets completed and multiple certificates
+
+   EMPL_ID TECHNICIAN_ID TICKETS_COMPLETED CERTIFICATION_COUNT                                                                                        
+---------- ------------- ----------------- -------------------                                                                                        
+    200009        600004                50                   2                                                                                        
+    200007        600002                40                   2                                                                                        
+    200008        600003                35                   2                                                                                        
+    200005        600001                25                   2                                                                                        
+
+Query 7:
+Purpose: Find the durations of the equipment rentals
+
+ RENTAL_ID DATE_RENT DATE_RETU RENTAL_DURATION                                                                                                        
+---------- --------- --------- ---------------                                                                                                        
+    700009 28-JAN-22 26-NOV-23             667                                                                                                        
+    700006 01-JAN-19 02-JAN-20             366                                                                                                        
+    700012 12-JAN-20 02-JAN-21             356                                                                                                        
+    700015 07-FEB-20 02-NOV-20             269                                                                                                        
+    700014 04-MAY-20 20-DEC-20             230                                                                                                        
+
+Query 8:
+Purpose: Describe the employee shifts and sort to find the best employees
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           TOTAL_HOURS_WORKED   SHIFT_ID                                                                    
+---------- -------------------- -------------------- ------------------ ----------                                                                    
+    200005 Sarah                Chen                                  9     210018                                                                    
+    200015 Elena                Ivanova                               8     210016                                                                    
+    200002 Nathan               Watson                                8     210002                                                                    
+    200004 Dean                 Callahan                              8     210004                                                                    
+    200001 Michael              Rodriguez                             8     210001                                                                    
+    200001 Michael              Rodriguez                             8     210020                                                                    
+    200014 Mohammed             Al-Sayed                              8     210014                                                                    
+    200012 Carlos               Hernandez                             8     210012                                                                    
+    200010 Ryan                 Kim                                   8     210010                                                                    
+    200008 Alex                 Wong                                  8     210008                                                                    
+    200007 Priya                Gupta                                 8     210022                                                                    
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           TOTAL_HOURS_WORKED   SHIFT_ID                                                                    
+---------- -------------------- -------------------- ------------------ ----------                                                                    
+    200006 Emily                Thompson                              8     210006                                                                    
+    200005 Sarah                Chen                                  6     210005                                                                    
+    200012 Carlos               Hernandez                             6     210026                                                                    
+    200003 Jaztin               Marasigan                             6     210003                                                                    
+    200011 Aisha                Malik                                 6     210025                                                                    
+    200011 Aisha                Malik                                 4     210011                                                                    
+    200004 Dean                 Callahan                              4     210019                                                                    
+    200006 Emily                Thompson                              4     210021                                                                    
+    200005 Sarah                Chen                                  4     210017                                                                    
+    200010 Ryan                 Kim                                   4     210023                                                                    
+    200013 Lily                 Zhang                                 4     210013                                                                    
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           TOTAL_HOURS_WORKED   SHIFT_ID                                                                    
+---------- -------------------- -------------------- ------------------ ----------                                                                    
+    200009 Maria                Garcia                                4     210009                                                                    
+    200015 Elena                Ivanova                               4     210015                                                                    
+    200007 Priya                Gupta                                 4     210007                                                                    
+
+25 rows selected.
+
+Query 9:
+Purpose: Find undervalued employees who meet the conditions of being hired less than 2 years ago, making less than the average salary, and who have worked at least 4 hours
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           HIREDATE  EMPL_SALARY TOTAL_HOURS_WORKED                                                         
+---------- -------------------- -------------------- --------- ----------- ------------------                                                         
+    200006 Emily                Thompson             20-FEB-23       65000                  8                                                         
+    200010 Ryan                 Kim                  10-JAN-23       62000                  8                                                         
+
+Query 10:
+Purpose: Describe the max payments made by each customer type
+
+MAX(AMOUNT_PAID) CUST_TYPE                                                                                                                            
+---------------- --------------------------------------------------                                                                                   
+             450 Individual_Client                                                                                                                    
+           10000 Small_Business                                                                                                                       
+
+Query 11:
+Purpose: Describe the condition and functions of the equipment in the inventory
+
+EQUIPMENT_ID INVENTORY_CONDITION                                SERVICE_FUNCTION                    CONTRACT_FUNCTION                                 
+------------ -------------------------------------------------- ----------------------------------- --------------------------------------------------
+      800001 Fair                                               Remove Virus                        Systems Checkup Tool                              
+      800002 Fair                                               Remove Virus                        Systems Checkup Tool                              
+      800003 Fair                                               Remove Virus                        Systems Checkup Tool                              
+      800004 Fair                                               Macbook Hardware Repair Kit         Emergency Support Tool                            
+      800005 Fair                                               Macbook Extra Hardware              Systems Checkup Tool                              
+      800006 Fair                                               Intel Laptops Hardware Repair Kit   Systems Checkup Tool                              
+      800007 Fair                                               Surface Pro Hardware Repair Kit     Emergency Support Tool                            
+      800008 Fair                                               Intel Laptops Extra Hardware        Maintenance Tool                                  
+      800009 Fair                                               Surface Pro Hardware Repair Kit     Systems Checkup Tool                              
+      800010 Fair                                               Remove Virus                        Systems Checkup Tool                              
+      800011 Fair                                               Remove Virus                        Maintenance Tool                                  
+
+EQUIPMENT_ID INVENTORY_CONDITION                                SERVICE_FUNCTION                    CONTRACT_FUNCTION                                 
+------------ -------------------------------------------------- ----------------------------------- --------------------------------------------------
+      800012 Fair                                               Remove Virus                        Systems Checkup Tool                              
+      800013 Fair                                               Remove Virus                        Maintenance Tool                                  
+      800014 Fair                                               Remove Virus                        Systems Checkup Tool                              
+      800015 Fair                                               Remove Virus                        Systems Checkup Tool                              
+
+15 rows selected.
+
+Query 12:
+Purpose: Get the information of all employees who worked overtime (shifts longer than 6 hours)
+
+EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                                                                                                
+-------------------- -------------------- ----------------------------------------                                                                    
+Michael              Rodriguez            12 Oak Street, San Jose, CA                                                                                 
+Nathan               Watson               78 Maple Drive, Austin, TX                                                                                  
+Dean                 Callahan             78 Magnolia Way, New York, NY                                                                               
+Emily                Thompson             34 Elm Road, Denver, CO                                                                                     
+Alex                 Wong                 23 Redwood Street, Portland, OR                                                                             
+Ryan                 Kim                  45 Spruce Boulevard, Boulder, CO                                                                            
+Carlos               Hernandez            567 Innovation Street, Miami, FL                                                                            
+Mohammed             Al-Sayed             123 Tech Crescent, Boston, MA                                                                               
+Elena                Ivanova              456 Innovation Avenue, Philadelphia, PA                                                                     
+Sarah                Chen                 45 Pine Avenue, Seattle, WA                                                                                 
+Priya                Gupta                89 Birch Court, San Francisco, CA                                                                           
+
+11 rows selected.
+
+Query 13:
+Purpose: Determine which managers get a bigger bonus based on if they worked an 8 hour shift
+
+   EMPL_ID EMPL_SALARY MANAGER_BONUS                                                                                                                  
+---------- ----------- -------------                                                                                                                  
+    200001       75000          7500                                                                                                                  
+    200002       90000         15000                                                                                                                  
+    200004      100000          7500                                                                                                                  
+
+Query 14:
+Purpose: Get the number of equipment rentals for each technician
+
+   EMPL_ID COUNT(TR.EMPL_ID)                                                                                                                          
+---------- -----------------                                                                                                                          
+    200008                 1                                                                                                                          
+    200009                 3                                                                                                                          
+    200010                 1                                                                                                                          
+    200015                 3                                                                                                                          
+    200006                 1                                                                                                                          
+    200011                 2                                                                                                                          
+    200013                 2                                                                                                                          
+    200014                 3                                                                                                                          
+    200005                 1                                                                                                                          
+    200007                 1                                                                                                                          
+    200012                 1                                                                                                                          
+
+11 rows selected.
+
+Query 15:
+Purpose: Find dedicated technicians hired after 2021 who worked full 8-hour shifts
+
+EMPL_FNAME           EMPL_LNAME           HIREDATE                                                                                                    
+-------------------- -------------------- ---------                                                                                                   
+Emily                Thompson             20-FEB-23                                                                                                   
+Alex                 Wong                 18-SEP-21                                                                                                   
+Ryan                 Kim                  10-JAN-23                                                                                                   
+Carlos               Hernandez            15-NOV-21                                                                                                   
+Elena                Ivanova              01-SEP-22                                                                                                   
+Priya                Gupta                12-MAY-22                                                                                                   
+
+6 rows selected.
+
+Query 16:
+Purpose: Get the contact information for all employees
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200001 Michael              Rodriguez            12 Oak Street, San Jose, CA              michael.rodriguez@tech.com                              
+408-555-1234                                                                                                                                          
+                                                                                                                                                      
+    200002 Nathan               Watson               78 Maple Drive, Austin, TX               nathan.watson@dataguard.com                             
+206-555-5678                                                                                                                                          
+                                                                                                                                                      
+    200003 Jaztin               Marasigan            67 Cedar Lane, New York, NY              j.marasigan@google.com                                  
+323-123-4344                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200003 Jaztin               Marasigan            67 Cedar Lane, New York, NY              jaztin.marasigan@globalit.com                           
+323-123-4344                                                                                                                                          
+                                                                                                                                                      
+    200003 Jaztin               Marasigan            67 Cedar Lane, New York, NY              j.marasigan@google.com                                  
+512-555-9012                                                                                                                                          
+                                                                                                                                                      
+    200003 Jaztin               Marasigan            67 Cedar Lane, New York, NY              jaztin.marasigan@globalit.com                           
+512-555-9012                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200004 Dean                 Callahan             78 Magnolia Way, New York, NY            dean.callahan@globalit.com                              
+303-555-3456                                                                                                                                          
+                                                                                                                                                      
+    200004 Dean                 Callahan             78 Magnolia Way, New York, NY            dean.callahan@globalit.com                              
+314-554-3454                                                                                                                                          
+                                                                                                                                                      
+    200005 Sarah                Chen                 45 Pine Avenue, Seattle, WA              sarah.chen@cloudnet.com                                 
+212-555-7890                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200006 Emily                Thompson             34 Elm Road, Denver, CO                  em.thompson@gmail.com                                   
+415-555-2345                                                                                                                                          
+                                                                                                                                                      
+    200006 Emily                Thompson             34 Elm Road, Denver, CO                  em.thompson@humboldt.edu                                
+415-555-2345                                                                                                                                          
+                                                                                                                                                      
+    200006 Emily                Thompson             34 Elm Road, Denver, CO                  emily.thompson@greentech.com                            
+415-555-2345                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200007 Priya                Gupta                89 Birch Court, San Francisco, CA        priya.gupta@tech.com                                    
+971-555-6789                                                                                                                                          
+                                                                                                                                                      
+    200008 Alex                 Wong                 23 Redwood Street, Portland, OR          alex.wong@cloudnet.com                                  
+737-555-0123                                                                                                                                          
+                                                                                                                                                      
+    200009 Maria                Garcia               56 Sequoia Drive, Austin, TX             maria.garcia@dataguard.com                              
+720-555-4567                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200010 Ryan                 Kim                  45 Spruce Boulevard, Boulder, CO         ryan.kim@greentech.com                                  
+917-555-8901                                                                                                                                          
+                                                                                                                                                      
+    200011 Aisha                Malik                234 Techpark Lane, Chicago, IL           aisha.malik@innovatech.com                              
+312-555-4567                                                                                                                                          
+                                                                                                                                                      
+    200012 Carlos               Hernandez            567 Innovation Street, Miami, FL         carlos.hernandez@tech.com                               
+305-555-8901                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200013 Lily                 Zhang                890 Startup Boulevard, San Diego, CA     lily.zhang@cloudnet.com                                 
+858-555-2345                                                                                                                                          
+                                                                                                                                                      
+    200014 Mohammed             Al-Sayed             123 Tech Crescent, Boston, MA            mohammed.alsayed@dataguard.com                          
+617-555-6589                                                                                                                                          
+                                                                                                                                                      
+    200014 Mohammed             Al-Sayed             123 Tech Crescent, Boston, MA            mohammed.alsayed@dataguard.com                          
+617-555-6789                                                                                                                                          
+                                                                                                                                                      
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_ADDRESS                             EMPL_EMAIL                                              
+---------- -------------------- -------------------- ---------------------------------------- --------------------------------------------------      
+EMPL_PHONE                                                                                                                                            
+--------------------------------------------------                                                                                                    
+    200015 Elena                Ivanova              456 Innovation Avenue, Philadelphia, PA  elena.ivanova@greentech.com                             
+215-555-0123                                                                                                                                          
+                                                                                                                                                      
+
+22 rows selected.
+
+Query 17:
+Purpose: Find the most popular services and their cost
+
+SERVICE_TYPE_ID SERVICE_NAME                                       COUNT(SERVICE_NAME) SERVICE_COST                                                   
+--------------- -------------------------------------------------- ------------------- ------------                                                   
+         610008 Network Setup                                                        1          400                                                   
+         610015 Internet Network Setup                                               1          350                                                   
+         610012 Application Virus Removal                                            1          300                                                   
+         610006 Software Troubleshooting                                             1          300                                                   
+         610005 PC Hardware Upgrade                                                  1          300                                                   
+         610010 Full System Virus Removal                                            1          300                                                   
+         610009 Network Upgrade                                                      1          300                                                   
+         610013 Specialized Virus Removal                                            1          300                                                   
+         610014 Software Troubleshooting for Mac                                     1          300                                                   
+         610007 Browser Troubleshooting                                              1          300                                                   
+         610011 Hardware Troubleshooting                                             1          300                                                   
+
+SERVICE_TYPE_ID SERVICE_NAME                                       COUNT(SERVICE_NAME) SERVICE_COST                                                   
+--------------- -------------------------------------------------- ------------------- ------------                                                   
+         610003 Browser Virus Removal                                                1          200                                                   
+         610002 Windows Virus Removal                                                1          200                                                   
+         610001 Apple Virus Removal                                                  1          200                                                   
+         610004 Laptop Hardware Upgrade                                              1          150                                                   
+
+15 rows selected.
+
+Query 18:
+Purpose: Find the duration it takes for services to be completed
+
+SERVICE_ID   duration SERVICE_NAME                                       SERVICE_COST                                                                 
+---------- ---------- -------------------------------------------------- ------------                                                                 
+    311006          7 Network Upgrade                                             300                                                                 
+    311002          6 Laptop Hardware Upgrade                                     150                                                                 
+    311002          6 Browser Virus Removal                                       200                                                                 
+    311002          6 Windows Virus Removal                                       200                                                                 
+    311004          3 Browser Troubleshooting                                     300                                                                 
+    311001          2 Apple Virus Removal                                         200                                                                 
+    311003          2 Software Troubleshooting                                    300                                                                 
+    311003          2 PC Hardware Upgrade                                         300                                                                 
+    311011          2 Software Troubleshooting for Mac                            300                                                                 
+    311010          2 Specialized Virus Removal                                   300                                                                 
+    311012          2 Internet Network Setup                                      350                                                                 
+
+SERVICE_ID   duration SERVICE_NAME                                       SERVICE_COST                                                                 
+---------- ---------- -------------------------------------------------- ------------                                                                 
+    311005          2 Network Setup                                               400                                                                 
+    311008          0 Hardware Troubleshooting                                    300                                                                 
+    311009          0 Application Virus Removal                                   300                                                                 
+    311007          0 Full System Virus Removal                                   300                                                                 
+
+15 rows selected.
+
+Query 19:
+Purpose: Compare all the maintenance contracts cost with the average maintenance contract cost
+
+CONTRACT_ID CONTRACT_NAME                                      CONTRACT_COST contract_cost_difference                                                 
+----------- -------------------------------------------------- ------------- ------------------------                                                 
+     500011 Yearly Check Up                                              600               103.333333                                                 
+     500006 Security Maintenance                                         500               3.33333333                                                 
+     500001 Semi-annual Check Up                                         450               -46.666667                                                 
+     500012 Semi-annual Check Up                                         450               -46.666667                                                 
+     500003 Employee Maintenance                                         400               -96.666667                                                 
+     500004 Employee Maintenance                                         400               -96.666667                                                 
+     500005 Customer Maintenance                                         400               -96.666667                                                 
+     500013 Monthly Check Up                                             400               -96.666667                                                 
+     500008 Network Maintenance                                          400               -96.666667                                                 
+     500002 Employee Maintenance                                         400               -96.666667                                                 
+     500001 Monthly Check Up                                             400               -96.666667                                                 
+
+CONTRACT_ID CONTRACT_NAME                                      CONTRACT_COST contract_cost_difference                                                 
+----------- -------------------------------------------------- ------------- ------------------------                                                 
+     500002 Network Maintenance                                          400               -96.666667                                                 
+     500009 Linus System Update                                          300               -196.66667                                                 
+     500010 Mac System Update                                            300               -196.66667                                                 
+     500007 Mac System Update                                            300               -196.66667                                                 
+
+15 rows selected.
+
+Query 20:
+Purpose: Find the total number of customers and the total numbers for each customer type
+
+# of Individual Clients # of Small Businesses Total Customer #                                                                                        
+----------------------- --------------------- ----------------                                                                                        
+                     15                    15               15                                                                                        
+
+Query 21:
+Purpose: Determine customer unpaid payments
+
+CUSTOMER_ID AMOUNT_DUE AMOUNT_PAID remaining dues                                                                                                     
+----------- ---------- ----------- --------------                                                                                                     
+     300006        500         450            -50                                                                                                     
+     300011       5000        4000          -1000                                                                                                     
+
+Query 22:
+Find which employees worked multiple shifts
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           # of Shifts                                                                                      
+---------- -------------------- -------------------- -----------                                                                                      
+    200005 Sarah                Chen                           3                                                                                      
+    200001 Michael              Rodriguez                      2                                                                                      
+    200012 Carlos               Hernandez                      2                                                                                      
+    200006 Emily                Thompson                       2                                                                                      
+    200010 Ryan                 Kim                            2                                                                                      
+    200004 Dean                 Callahan                       2                                                                                      
+    200015 Elena                Ivanova                        2                                                                                      
+    200007 Priya                Gupta                          2                                                                                      
+    200011 Aisha                Malik                          2                                                                                      
+
+9 rows selected.
+
+Query 23:
+Purpose: Calculate the total revenue for our business (Humboldt Haven IT)
+
+BUSINESS_ID DBA               Total Revenue                                                                                                           
+----------- ----------------- -------------                                                                                                           
+     100001 Humboldt Haven IT      27596.38                                                                                                           
+
+Query 24:
+Purpose: Identify all employees that have a salary below the average for their job type
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_SALARY EMPL_TYPE                                                                            
+---------- -------------------- -------------------- ----------- ---------------                                                                      
+    200001 Michael              Rodriguez                  75000 Manager                                                                              
+    200006 Emily                Thompson                   65000 Technician                                                                           
+    200010 Ryan                 Kim                        62000 Technician                                                                           
+   2000001 Alex                 Jobs                       80000 Manager                                                                              
+   2000002 Ken                  Cobble                     80000 Manager                                                                              
+   2000003 Olivia               Mason                      80000 Manager                                                                              
+   2000004 Steve                Smith                      80000 Manager                                                                              
+   2000005 George               Doe                        80000 Manager                                                                              
+   2000007 Alex                 Jackson                    60000 Technician                                                                           
+   2000008 Steve                West                       60000 Technician                                                                           
+   2000010 Jesse                North                      60000 Manager                                                                              
+
+   EMPL_ID EMPL_FNAME           EMPL_LNAME           EMPL_SALARY EMPL_TYPE                                                                            
+---------- -------------------- -------------------- ----------- ---------------                                                                      
+   2000011 Micah                South                      70000 Manager                                                                              
+   2000016 Sarah                Wang                       60000 Technician                                                                           
+   2000017 Courtney             Lybard                     50000 Technician                                                                           
+   2000018 Jane                 Thawne                     20000 Technician                                                                           
+   2000019 James                Allen                      10000 Technician                                                                           
+
+16 rows selected.
+

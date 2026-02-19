@@ -1,0 +1,40 @@
+Report 1:
+
+
+Wed Dec 11                               page    1
+             Employee Salaries Report
+
+Employee Type   FULL_NAME                SALARY   
+--------------- ------------------ ------------   
+Manager         Dean Callahan       $100,000.00   
+                Jaztin Marasigan     $95,000.00   
+                Nathan Watson        $90,000.00   
+                George Doe           $80,000.00   
+                Steve Smith          $80,000.00   
+                Olivia Mason         $80,000.00   
+                Ken Cobble           $80,000.00   
+                Alex Jobs            $80,000.00   
+                Michael Rodriguez    $75,000.00   
+                Micah South          $70,000.00   
+                Jesse North          $60,000.00   
+                                                  
+Technician      Mohammed Al-Sayed    $92,000.00   
+                Maria Garcia         $85,000.00   
+                Carlos Hernandez     $85,000.00   
+                Sarah Chen           $82,000.00   
+                Alice Jenkins        $80,000.00   
+                Alex Wong            $80,000.00   
+                Aisha Malik          $78,000.00   
+                Lily Zhang           $72,000.00   
+                Priya Gupta          $70,000.00   
+                Jamie East           $70,000.00   
+                Elena Ivanova        $68,000.00   
+                Emily Thompson       $65,000.00   
+                Ryan Kim             $62,000.00   
+                Steve West           $60,000.00   
+                Sarah Wang           $60,000.00   
+                Alex Jackson         $60,000.00   
+                Courtney Lybard      $50,000.00   
+                Jane Thawne          $20,000.00   
+                James Allen          $10,000.00   
+                                                  

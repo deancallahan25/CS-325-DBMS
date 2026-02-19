@@ -1,0 +1,107 @@
+Group Members: Dean Callahan, Jaztin Marasigan, Nathan Watson
+CS 325 - Fall 2024
+Date Last Modified: 12/10/24
+
+Business(BUSINESS_ID, Tax_id, Dba, Address, Hours_operation)
+
+Employee(EMPL_ID, Empl_salary, Empl_fname, Empl_lname, Empl_address,
+      Business_id, Empl_type, Hiredate)
+   foreign key (business_id) references Business
+
+Empl_Email(EMPL_ID, EMPL_EMAIL)
+   foreign key (empl_id) references Employee
+
+Empl_Phone(EMPL_ID, EMPL_PHONE)
+   foreign key (empl_id) references Employee
+
+Manager(EMPL_ID, Manager_id, Manager_bonus, Inventory_id, Schedule_id)
+   foreign key (empl_id) references Employee,
+   foreign key (inventory_id) references Inventory,
+   foreign key (schedule_id) references Work_Schedule
+   
+Technician(EMPL_ID, Technician_id, Tickets_completed)
+   foreign key (empl_id) references Employee
+
+Technician_Tech_Certifications(EMPL_ID, TECH_CERTIFICATIONS)
+   foreign key (empl_id) references Employee
+
+Technician_Rents_From_Equipment_Rental(EMPL_ID, RENTAL_ID)
+   foreign key (empl_id) references Employee,
+   foreign key (rental_id) references Equipment_Rental
+   
+Technicians_Resolve_Ticket(EMPL_ID, TICKET_ID)
+   foreign key (empl_id) references Employee,
+   foreign key (ticket_id) references Ticket
+  
+Ticket(TICKET_ID, Date_opened, Date_closed, Status, Cust_id)
+
+Customer(CUSTOMER_ID, Cust_Address, Business_id, cust_type)
+   foreign key (business_id) references Business
+
+Individual_Client(CUSTOMER_ID, Client_id, Client_fname, Client_lname)
+   foreign key (customer_id) references Customer
+
+Small_Business(CUSTOMER_ID, Small_business_id, Tax_id, Dba)
+   foreign key (customer_id) references Customer
+
+Customer_Submit_Ticket(CUSTOMER_ID, TICKET_ID)
+   foreign key (customer_id) references Customer,
+   foreign key (ticket_id) references Ticket
+   
+Cust_Email(CUST_ID, CUST_EMAIL)
+   foreign key (cust_id) references Customer
+
+Cust_Phone(CUST_ID, CUST_PHONE)
+   foreign key (cust_id) references Customer
+
+Inventory(INVENTORY_ID, Item_count, Item_condition, Business_id)
+   foreign key (business_id) references Business
+
+Equipment(EQUIPMENT_ID, Inventory_id, Rental_id)
+   foreign key (inventory_id) references Inventory,
+   foreign key (rental_id) references Equipment_Rental
+
+Equipment_Service_Function(EQUIPMENT_ID, SERVICE_FUNCTION)
+   foreign key (equipment_id) references Equipment
+
+Equipment_Contract_Function(EQUIPMENT_ID, Contract_FUNCTION)
+   foreign key (equipment_id) references Equipment
+
+Equipment_Rental(RENTAL_ID, Date_rented, Date_returned)
+
+Transaction(TRANSACTION_ID, Amount_due, Date_due, Customer_id)
+   foreign key (customer_id) references Customer
+
+Payment(PAYMENT_ID, Payment_method, Amount_paid, Currency, Business_id,
+      Transaction_id)
+   foreign key (business_id) references Business, 
+   foreign key (transaction_id) references Transaction
+
+Work_Schedule(SCHEDULE_ID, Hours_operation, Date_scheduled, business_id)
+   foreign key (business_id) references Business
+
+Shift(SHIFT_ID, Total_hours_worked, schedule_id, Empl_id)
+   foreign key (Schedule_id) references Work_Schedule
+   foreign key (EMpl_id) references Employee
+
+Service(SERVICE_ID, Service_start_date, Service_end_date, Ticket_id, Customer_id)
+   foreign key (ticket_id) references Ticket,
+   foreign key (customer_id) references Customer
+
+Service_Type(SERVICE_TYPE_ID, Service_name, Service_cost)
+
+Service_Is_Service_Type(SERVICE_ID, SERVICE_TYPE_ID)
+   foreign key (service_id) references Service,
+   foreign key (service_type_id) references Service_Type
+
+Maintenance_Contract(CONTRACT_ID, Contract_start_date, Contract_end_date, Ticket_id, Customer_id)
+   foreign key (ticket_id) references Ticket,
+   foreign key (customer_id) references Small_Business
+
+Contract_Type(CONTRACT_TYPE_ID, Contract_name, Contract_cost)
+
+Contract_Is_Contract_Type(CONTRACT_ID, CONTRACT_TYPE_ID)
+   foreign key (contract_id) references Contract,
+   foreign key (contract_type_id) references Contract_Type
+
+

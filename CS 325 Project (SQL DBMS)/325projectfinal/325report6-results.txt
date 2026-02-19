@@ -1,0 +1,22 @@
+Report 6:
+
+Wed Dec 11                                                                                                          page    1
+                                           Small Business Contract Summary Report
+
+Business Name          Contract ID Contract Start Date  Contract End Date    Contract Type        Contract Cost              
+---------------------- ----------- -------------------- -------------------- -------------------- -------------              
+Computers Innovatech        500003 12/01/2022           12/03/2022           Employee Maintenance       $400.00              
+Computers Innovatech        500011 10/02/2023           10/04/2023           Yearly Check Up            $600.00              
+Elenas Tech World           500007 06/08/2022           06/10/2023           Mac System Update          $300.00              
+Hernandez Tech Repair       500012 11/20/2022           11/22/2023           Semi-annual Check Up       $450.00              
+Hernandez Tech Repair       500004 12/28/2022           12/30/2022           Employee Maintenance       $400.00              
+Humboldt Library            500002 10/04/2021           10/06/2021           Network Maintenance        $400.00              
+Humboldt Library            500002 10/04/2021           10/06/2021           Employee Maintenance       $400.00              
+Humboldt Library            500010 09/14/2023           09/16/2023           Mac System Update          $300.00              
+Humboldt Records            500001 01/07/2021           01/09/2021           Monthly Check Up           $400.00              
+Humboldt Records            500001 01/07/2021           01/09/2021           Semi-annual Check Up       $450.00              
+Humboldt Records            500008 07/26/2023           07/28/2023           Network Maintenance        $400.00              
+Humboldt Records            500009 08/03/2023           08/05/2023           Linus System Update        $300.00              
+Mohammad Electronics        500006 03/05/2023           03/07/2023           Security Maintenance       $500.00              
+Techy Zhangs                500005 01/03/2023           01/05/2023           Customer Maintenance       $400.00              
+Techy Zhangs                500013 12/23/2023           12/25/2023           Monthly Check Up           $400.00              
